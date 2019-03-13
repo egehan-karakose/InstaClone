@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.egehankarakose.instacloneapp.Profile.ProfileSettingsActivity">
+
+    <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp" app:srcCompat="@drawable/ic_back"
+            android:id="@+id/profileSettingsBackButton" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingText" app:layout_constraintStart_toEndOf="@+id/profileSettingsBackButton"
+            android:layout_marginStart="24dp" app:layout_constraintBottom_toBottomOf="@+id/profileSettingsBackButton"
+            app:layout_constraintTop_toTopOf="@+id/profileSettingsBackButton"
+            android:textSize="24sp" android:textColor="@color/black"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/shadow"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/settingText"
+            android:id="@+id/shadow" android:layout_marginTop="16dp">
+
+    </View>
+    <TextView
+            android:text="Account Setting"
+            android:layout_width="134dp"
+            android:layout_height="28dp"
+            android:id="@+id/textView" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/shadow" android:layout_marginTop="24dp"
+            android:textColor="@color/black" android:textSize="18sp" android:textStyle="bold"/>
+    <TextView
+            android:text="Hidden Account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileSettingsHiddenAccountTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/profileSettingsSavedPostsTextView2"
+            android:textColor="@color/black"/>
+    <TextView
+            android:text="Saved Posts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileSettingsSavedPostsTextView2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/profileSettingsChangePasswordTextView2"
+            android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:textSize="18sp" android:textColor="@color/black"/>
+    <TextView
+            android:text="Change Password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileSettingsChangePasswordTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/profileSettingsLikedPostTextView2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:textSize="18sp" android:textColor="@color/black"/>
+    <TextView
+            android:text="Liked Posts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileSettingsLikedPostTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/profileSettingsEditProfileTextView2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:textSize="18sp" android:textColor="@color/black"/>
+    <TextView
+            android:text="Edit Profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileSettingsEditProfileTextView2" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:textSize="18sp" android:textColor="@color/black"/>
+    <TextView
+            android:text="Sign Out"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileSettingsSignOutTextView" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp" android:textSize="18sp"
+            android:textColor="@color/blue" app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/profileSettingsRemoveSearchHistoryTextView2"/>
+    <TextView
+            android:text="Remove Search History"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileSettingsRemoveSearchHistoryTextView2" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/profileSettingsHiddenAccountTextView"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp" android:textSize="18sp"
+            android:textColor="@color/blue"/>
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:menu="@menu/bottom_navigation_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@id/bottomNavigationView"
+    ></com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
+    <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/shadow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"></View>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

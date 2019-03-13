@@ -7,4 +7,153 @@
         android:layout_height="match_parent"
         tools:context=".Profile.ProfileActivity">
 
+    <TextView
+            android:text="Profile Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewProfileNameToolbar" android:textSize="16sp"
+            android:textColor="@color/black" android:textStyle="bold" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/shadow" android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"/>
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_profile_options"
+            android:id="@+id/imgProfileSettings"
+            app:layout_constraintTop_toTopOf="@+id/textViewProfileNameToolbar"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewProfileNameToolbar"
+            app:layout_constraintVertical_bias="1.0" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_discover_people"
+            android:id="@+id/imgDiscoverPeople"
+            app:layout_constraintEnd_toStartOf="@+id/imgProfileSettings"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgProfileSettings"/>
+    <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/shadow"
+            android:id="@+id/shadow"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/imgDiscoverPeople"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+    </View>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleProfileImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/tab_profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/shadow"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/shadow" android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <TextView
+            android:text="1204"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/followersTextView" app:layout_constraintEnd_toStartOf="@+id/followingTextView"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toEndOf="@+id/postTextView"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/postTextView" android:textStyle="bold"
+            android:textColor="@color/black" android:textSize="18sp"/>
+    <TextView
+            android:text="35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/postTextView"
+            app:layout_constraintStart_toEndOf="@+id/circleProfileImage"
+            android:layout_marginStart="50dp"
+            app:layout_constraintTop_toTopOf="@+id/circleProfileImage" android:layout_marginTop="8dp"
+            android:textStyle="bold" android:textColor="@color/black" android:textSize="18sp"/>
+    <TextView
+            android:text="3132"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/followingTextView" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="50dp"
+            app:layout_constraintTop_toTopOf="@+id/followersTextView" android:textStyle="bold" android:textColor="@color/black"
+            android:textSize="18sp"/>
+    <TextView
+            android:text="following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" app:layout_constraintStart_toStartOf="@+id/followingTextView"
+            app:layout_constraintEnd_toEndOf="@+id/followingTextView" android:textSize="16sp" android:textColor="#BF000000"
+            app:layout_constraintTop_toBottomOf="@+id/followingTextView" android:layout_marginTop="4dp"
+    />
+    <TextView
+            android:text="followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5" app:layout_constraintStart_toStartOf="@+id/followersTextView"
+            app:layout_constraintEnd_toEndOf="@+id/followersTextView" android:textSize="16sp" android:textColor="#BF000000"
+            app:layout_constraintTop_toBottomOf="@+id/followersTextView" android:layout_marginTop="4dp"
+    />
+    <TextView
+            android:text="posts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" app:layout_constraintStart_toStartOf="@+id/postTextView"
+            app:layout_constraintEnd_toEndOf="@+id/postTextView" android:textSize="16sp" android:textColor="#BF000000"
+            app:layout_constraintTop_toBottomOf="@+id/postTextView" android:layout_marginTop="4dp"
+    />
+    <TextView
+            android:text="Edit Profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editProfileButton"
+            android:background="@drawable/edit_profile_button_background"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/circleProfileImage"
+            android:textSize="16sp"
+            android:layout_marginEnd="24dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/circleProfileImage" android:layout_marginStart="24dp"
+            android:textAlignment="center" android:textColor="@color/black"/>
+    <TextView
+            android:text="User Name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileUserNameText" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/circleProfileImage" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" android:textStyle="bold" android:textColor="@color/black"
+            android:textSize="16sp"/>
+    <TextView
+            android:text="loremloremloremloremloremloremloremloremloremloremloremlorem!!!!"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bioTextView" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/profileUserNameText" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" android:textSize="16sp"/>
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:menu="@menu/bottom_navigation_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/bottomNavigationView">
+
+
+
+    </com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
+    <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/shadow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"></View>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

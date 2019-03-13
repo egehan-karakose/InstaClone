@@ -2,6 +2,9 @@ package com.egehankarakose.instacloneapp.Home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.egehankarakose.instacloneapp.Home.CameraFragment
+import com.egehankarakose.instacloneapp.Home.HomeFragment
+import com.egehankarakose.instacloneapp.Home.MessageFragment
 import com.egehankarakose.instacloneapp.R
 import com.egehankarakose.instacloneapp.utils.BottomNavigationViewHelper
 import com.egehankarakose.instacloneapp.utils.HomePagesAdapter

@@ -1,4 +1,4 @@
-package com.egehankarakose.instacloneapp
+package com.egehankarakose.instagramclone
 
 import org.junit.Test
 

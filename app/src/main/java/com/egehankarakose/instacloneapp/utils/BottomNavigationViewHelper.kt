@@ -19,8 +19,6 @@ class BottomNavigationViewHelper {
         fun setupBottomNavigationView(bottomNavigationViewEx: BottomNavigationViewEx ){
 
             bottomNavigationViewEx.enableAnimation(false)
-            bottomNavigationViewEx.enableItemShiftingMode(false)
-            bottomNavigationViewEx.enableShiftingMode(false)
             bottomNavigationViewEx.setTextVisibility(false)
 
 
